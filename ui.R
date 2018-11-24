@@ -4,6 +4,7 @@ shinyUI(
     tabPanel(div(h4("Upload data")),
           sidebarLayout(
            sidebarPanel(
+             selectInput("cross_type", label = "Cross type", choices = "F2", "DH/RIL","BCsFt","BackCross", "Four-way"),
                  fileInput('file1', 'Choose file to upload',
                     accept = c(
                       'text/csv',
